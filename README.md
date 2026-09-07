@@ -3,7 +3,7 @@ Resolución de trabajos prácticos de Programación Orientada a Objetos en Java.
 
 # Programación Orientada a Objetos - Ejercitaciones 2.1 y 2.2
 
-Este repositorio contiene la resolución integral de las guías prácticas para la materia Programación Orientada a Objetos en Java. 
+Este repositorio contiene la resolución de las guías prácticas para la materia Programación Orientada a Objetos en Java. 
 
 Cada ejercicio está modularizado de forma independiente dentro de su propio paquete, permitiendo ejecutar y probar las consignas de forma aislada sin dependencias externas.
 
