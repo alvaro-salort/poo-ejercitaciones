@@ -11,15 +11,21 @@ public class Mascota {
         this.edad = edad;
     }
 
-    public static void main(String[] args) {
-        Mascota mascota1 = new Mascota("Tommy", "Perro", 5);
-        Mascota mascota2 = new Mascota("Cloe", "Perro", 6);
-        Mascota mascota3 = new Mascota("Lago", "Gato", 1);
-        Mascota mascota4 = new Mascota("Panza", "Perro", 10);
-        Mascota mascota5 = new Mascota("Naga", "Perro", 9);
+    public void mostrarInfo() {
+        System.out.printf("Nombre: %-12s | Especie: %-10s | Edad: %2d años%n", nombre, especie, edad);
+    }
 
-        System.out.println(String.format("Nombre: %-10s  Especie: %-10s  Edad: %3d ", mascota1.nombre, mascota1.especie, mascota1.edad));
-        System.out.println(String.format("Nombre: %-10s  Especie: %-10s  Edad: %3d ", mascota2.nombre, mascota2.especie, mascota2.edad));
-        System.out.println(String.format("Nombre: %-10s  Especie: %-10s  Edad: %3d ", mascota3.nombre, mascota3.especie, mascota3.edad));
+    public static void main(String[] args) {
+        Mascota mascota1 = new Mascota("Naga", "Perro", 9);
+        Mascota mascota2 = new Mascota("Panza", "Perro", 12);
+        Mascota mascota3 = new Mascota("Lago", "Gato", 1);
+        Mascota mascota4 = new Mascota("Yiyi", "Gato", 10);
+        Mascota mascota5 = new Mascota("Andromeda", "Ajolote", 4);
+
+        mascota1.mostrarInfo();
+        mascota2.mostrarInfo();
+        mascota3.mostrarInfo();
+        mascota4.mostrarInfo();
+        mascota5.mostrarInfo();
     }
 }
