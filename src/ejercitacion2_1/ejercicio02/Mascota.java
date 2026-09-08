@@ -16,16 +16,16 @@ public class Mascota {
     }
 
     public static void main(String[] args) {
-        Mascota mascota1 = new Mascota("Naga", "Perro", 9);
-        Mascota mascota2 = new Mascota("Panza", "Perro", 12);
-        Mascota mascota3 = new Mascota("Lago", "Gato", 1);
-        Mascota mascota4 = new Mascota("Yiyi", "Gato", 10);
-        Mascota mascota5 = new Mascota("Andromeda", "Ajolote", 4);
+        Mascota[] mascotas = {
+                new Mascota("Naga", "Perro", 9),
+                new Mascota("Panza", "Perro", 12),
+                new Mascota("Lago", "Gato", 1),
+                new Mascota("Yiyi", "Gato", 10),
+                new Mascota("Andromeda", "Ajolote", 4)
+        };
 
-        mascota1.mostrarInfo();
-        mascota2.mostrarInfo();
-        mascota3.mostrarInfo();
-        mascota4.mostrarInfo();
-        mascota5.mostrarInfo();
+        for (Mascota mascota : mascotas) {
+            mascota.mostrarInfo();
+        }
     }
 }
