@@ -48,6 +48,9 @@ public class Contador {
 
         contador.resetear();
         System.out.println("Valor después de resetear: " + contador.getValor());
+
+        Contador contador2 = new Contador(5);
+        System.out.println("Valor actual del contador 2: " + contador2.getValor());
     }
 
 
