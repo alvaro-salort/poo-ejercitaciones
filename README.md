@@ -47,7 +47,7 @@ poo-ejercitaciones/
 
 ## Compilación y Ejecución
 
-No es necesario descargar librerías ni configurar gestores de dependencias adicionales; el proyecto utiliza Java estándar (Vanilla Java).
+No es necesario descargar librerías ni configurar gestores de dependencias adicionales; el proyecto utiliza Java estándar.
 
 ### Opción A: Desde cualquier IDE (Recomendado)
 1. Abrir la carpeta raíz `poo-ejercitaciones` en el IDE.
