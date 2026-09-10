@@ -13,11 +13,33 @@ public class Libro {
         this.paginasTotales = paginasTotales;
         this.paginaActual = 0;
     }
-    
 
+    public void leer(int paginas){
+        this.paginaActual += paginas;
+        if (this.paginaActual >= this.paginasTotales){
+            this.paginaActual = this.paginasTotales;
+            System.out.println("Ya terminaste este libro! :)");
+        }
+    }
+
+    public double mostrarProgreso(){
+        double progreso = paginaActual / (double) paginasTotales * 100;
+        System.out.printf("Libro: %-20s | Autor: %-20s | progreso: %.2f%% %n", titulo, autor, progreso);
+        return progreso;
+    }
 
     public static void main(String[] args){
 
+        Libro libro1 = new Libro("El Señor de los Anillos", "J.R.R. Tolkien", 1000);
+        libro1.paginaActual = 570;
+        libro1.mostrarProgreso();
+        libro1.leer(3);
+        System.out.println("Leyendo tres páginas...");
+        libro1.mostrarProgreso();
+
+        Libro libro2 = new Libro("1984", "George Orwell", 328);
+        libro2.paginaActual = 100;
+        libro2.mostrarProgreso();
     }
 
 
