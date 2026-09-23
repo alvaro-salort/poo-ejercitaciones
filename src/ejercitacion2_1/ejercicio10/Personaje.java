@@ -23,6 +23,10 @@ public class Personaje {
         System.out.printf("%s ataca a %s causando %d de daño. Vida restante de %s: %d%n", this.nombre, objetivo.nombre, this.puntosAtaque, objetivo.nombre, objetivo.puntosVida);
     }
 
+    public String getNombre(){
+        return nombre;
+    }
+
 
     public static void main(String[] args){
         Personaje p1 = new Personaje("Guts", 100, 20);
@@ -34,9 +38,9 @@ public class Personaje {
             }
         }
         if(p1.estaVivo()){
-            System.out.println("El ganador es" + p1.getNombre + "!");
+            System.out.println("El ganador es " + p1.getNombre() + "!");
         } else {
-            System.out.println("El ganador es" + p2.getNombre + "!");
+            System.out.println("El ganador es " + p2.getNombre() + "!");
         }
     }
 }
