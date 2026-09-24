@@ -21,15 +21,3 @@ public class ArticuloGeek {
     }
     
 }
-
-/*  Objetivo de aprendizaje: Definir una clase en Java, declarar atributos y comprender el proceso de instanciación en la memoria Heap utilizando el operador new.
-
-Consigna:
-
-Defina una clase llamada ArticuloGeek con dos atributos de instancia: nombre (de tipo String) y precioBase (de tipo double).
-
-En el método principal (public static void main), instancie dos objetos distintos de la clase ArticuloGeek.
-
-Asigne valores a los atributos de cada objeto de manera directa mediante el operador de acceso punto (.).
-
-Imprima por consola los datos de ambas instancias. */
