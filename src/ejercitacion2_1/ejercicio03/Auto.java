@@ -1,9 +1,9 @@
 package ejercitacion2_1.ejercicio03;
 
 public class Auto {
-    String marca;
-    String modelo;
-    boolean encendido;
+    private String marca;
+    private String modelo;
+    private boolean encendido;
 
     public Auto(String marca, String modelo) {
         this.marca = marca;
