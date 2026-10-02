@@ -1,7 +1,7 @@
 package ejercitacion2_1.ejercicio05;
 
 public class Contador {
-    int valor;
+    private int valor;
 
     public Contador() {
         this.valor = 0;
