@@ -1,9 +1,9 @@
 package ejercitacion2_1.ejercicio02;
 
 public class Mascota {
-    String nombre;
-    String especie;
-    int edad;
+    private String nombre;
+    private String especie;
+    private int edad;
 
     public Mascota(String nombre, String especie, int edad) {
         this.nombre = nombre;
