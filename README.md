@@ -1,9 +1,8 @@
 # Programación Orientada a Objetos - Ejercitaciones 2.1 y 2.2
 
-
 Este repositorio contiene la resolución integral de las guías prácticas para la materia **Programación Orientada a Objetos en Java**.
 
-Cada ejercicio está modularizado de forma independiente dentro de su propio paquete, permitiendo compilar, ejecutar y testear las consignas de forma aislada sin dependencias externas ni configuraciones complejas.
+Cada ejercicio está modularizado de forma independiente dentro de su propio paquete, permitiendo compilar, ejecutar y testear las consignas de forma aislada. Además, se incluye un **Menú Interactivo de Consola (`Main.java`)** para ejecutar cualquier ejercicio de forma rápida y cómoda desde un solo lugar.  
 
 ---
 
@@ -12,6 +11,7 @@ Cada ejercicio está modularizado de forma independiente dentro de su propio paq
 ```text
 poo-ejercitaciones/
 └── src/
+    ├── Main.java                 
     ├── ejercitacion2_1/
     │   ├── ejercicio01/ (Persona)
     │   ├── ejercicio02/ (Mascota)
@@ -47,25 +47,40 @@ poo-ejercitaciones/
 
 ## Compilación y Ejecución
 
-No es necesario descargar librerías ni configurar gestores de dependencias adicionales; el proyecto utiliza Java estándar.
+### Opción 1: Menú Interactivo de Consola (¡Recomendado!)
 
-### Opción A: Desde cualquier IDE (Recomendado)
-1. Abrir la carpeta raíz `poo-ejercitaciones` en el IDE.
-2. Navegar hasta la clase deseada dentro de `src/ejercitacionX_X/ejercicioXX/`.
-3. Hacer clic en el botón **Run / Ejecutar** en el método `main`.
+Para evaluar o navegar por cualquier ejercicio de forma rápida sin tener que abrirlos individualmente:
 
-### Opción B: Desde la Terminal
-Posicionarse en la carpeta raíz del repositorio (`poo-ejercitaciones`):
-
+**Desde la Terminal:**
 ```bash
-# 1. Compilar el ejercicio que se desee probar (ejemplo: Mascota)
-javac -d bin src/ejercitacion2_1/ejercicio02/Mascota.java
+# 1. Compilar todo el proyecto
+javac -d bin (Get-ChildItem -Recurse -Filter *.java src).FullName   # PowerShell
+# o en bash / zsh:
+# javac -d bin $(find src -name "*.java")
 
-# 2. Ejecutar la clase compilada indicando su paquete completo
-java -cp bin ejercitacion2_1.ejercicio02.Mascota
+# 2. Ejecutar el menú principal
+java -cp bin Main
 ```
 
+**Desde cualquier IDE:**
+Simplemente abrir y ejecutar la clase `src/Main.java`.
 
 ---
 
-> *"«No todos los que vagan están perdidos... pero los que no compilan antes de entregar, probablemente sí.»"* 🗡️
+### Opción 2: Ejecutar un Ejercicio Individual
+
+Si se prefiere probar un ejercicio específico de forma aislada:
+
+* **Desde el IDE:** Navegar a la clase deseada dentro de `src/ejercitacionX_X/ejercicioXX/` y ejecutar su método `main`.
+* **Desde la Terminal:**
+  ```bash
+  # 1. Compilar la clase deseada (ejemplo: Mascota)
+  javac -d bin src/ejercitacion2_1/ejercicio02/Mascota.java
+
+  # 2. Ejecutar la clase compilada indicando su paquete completo
+  java -cp bin ejercitacion2_1.ejercicio02.Mascota
+  ```
+
+---
+
+> *"«No todos los que vagan están perdidos... pero los que no compilaron antes de entregar, probablemente sí.»"* 🗡️
