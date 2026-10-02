@@ -1,8 +1,8 @@
 package ejercitacion2_2.ejercicio01;
 
 public class ArticuloGeek {
-    public String nombre;
-    public double precioBase;
+    private String nombre;
+    private double precioBase;
 
 
 
