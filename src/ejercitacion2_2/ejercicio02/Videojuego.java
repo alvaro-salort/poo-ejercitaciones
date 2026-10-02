@@ -1,9 +1,9 @@
 package ejercitacion2_2.ejercicio02;
 
 public class Videojuego {
-    public String titulo;
-    public String plataforma;
-    public double precio;
+    private String titulo;
+    private String plataforma;
+    private double precio;
 
     public Videojuego(String titulo, String plataforma, double precio) {
         this.titulo = titulo;
