@@ -32,11 +32,7 @@ public class Estudiante {
     }
 
     public boolean haAprobado() {
-        if(calcularPromedio() >= 6){
-            return true;
-        } else {
-            return false;
-        }
+        return calcularPromedio() >= 6.0;
     }
 
     public static void main(String[] args){
