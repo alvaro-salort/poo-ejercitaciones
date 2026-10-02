@@ -2,10 +2,10 @@ package ejercitacion2_1.ejercicio06;
 
 public class Libro {
 
-    String titulo;
-    String autor;
-    int paginasTotales;
-    int paginaActual;
+    private String titulo;
+    private String autor;
+    private int paginasTotales;
+    private int paginaActual;
 
     public Libro(String titulo, String autor, int paginasTotales) {
         this.titulo = titulo;
