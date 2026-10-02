@@ -1,8 +1,8 @@
 package ejercitacion2_1.ejercicio01;
 
 public class Persona {
-    String nombre;
-    int edad;
+    private String nombre;
+    private int edad;
 
     public static void main(String[] args) {
         Persona persona1 = new Persona();
